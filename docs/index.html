@@ -1,0 +1,71 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lab</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, serif;
+        }
+
+        h1 {
+            color: #0B3954;
+		}
+
+	    .green {
+		color :  green;
+		}
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <h1 id="main-header">Moja aplikacja</h1>
+    <p>To będzie gra. A oto co muszę zrobić:</p>
+    <ol>
+        <li class="boring">Nauczyć się HTML</li>
+        <li class="boring">Nauczyć się CSS</li>
+        <li>Nauczyć się JS</li>
+        <li id="super-important">Zaimplementować</li>
+    </ol>
+</div>
+
+<script>
+
+    const header = document.getElementById('main-header');
+    alert(header.innerText);
+    
+    const nudy = document.querySelectorAll("#app .boring");
+    nudy.forEach(element => {
+    alert(`Nuda: ${element.innerText}`);
+    element.classList.remove('boring');
+    });
+
+    let div = document.createElement('div');
+    div.classList.add('green');
+    div.innerText = 'Zielony tekst (jeśli dodasz CSS)';
+    document.getElementById('app').append(div);
+    
+    let listItem = dokument.creatElement(li);
+    listItem.InnerText = "Zagrać";
+
+    
+    function removeBoringStuff() {
+        document.querySelectAll('app').("#app.boring");
+    }
+    <button type="button" onclick="removeBoringStuff()">Usuń nudne rzeczy</button>
+
+    <input type="text" id="myTextField">
+    <input type="checkbox" id="myCheckbox">
+    <button type="button" onclick="readValues()">Odczytaj wartości</button>
+
+    function ReadVolues ()
+    const textField = dokument.getElementById('MyTextField);
+    const chexbox = dokument.get
+
+</script>
+
+</body>
+</html>
